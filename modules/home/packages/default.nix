@@ -1,5 +1,4 @@
-{ pkgs, inputs, ... }: {
-  imports = [ inputs.orcaslicer.packages.${pkgs.system}.default];
+{ pkgs, system, inputs, ... }: {
   home.packages = with pkgs; [
     pavucontrol
 
@@ -36,5 +35,18 @@
     obs-studio-plugins.obs-pipewire-audio-capture
 
     betterbird
+
+    #inputs.orcaslicer.packages.x86_64-linux
+    protontricks
+    protonup-qt
+    qbittorrent
+    lutris
+    wine-wayland
+    winetricks
+    gamescope
+    gamemode
+    sublime
+
+    bottles
   ];
 }
