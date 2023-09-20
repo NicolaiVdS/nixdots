@@ -48,5 +48,7 @@
     sublime
 
     bottles
+
+    peazip
   ];
 }

@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ config, pkgs, ... }: {
   hardware = {
     opengl = {
       enable = true;
@@ -9,6 +9,7 @@
       modesetting.enable = true;
       open = false;
       nvidiaSettings = true;
+      package = config.boot.kernelPackages.nvidiaPackages.dc_520;
     };
   };
   powerManagement = {
