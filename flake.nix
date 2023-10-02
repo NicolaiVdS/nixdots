@@ -9,6 +9,11 @@
     alejandra.url = "github:kamadorueda/alejandra/3.0.0"; # The Uncompromising Nix Code Formatter.
     hyprland-contrib.url = "github:hyprwm/contrib";
     nur.url = "github:nix-community/NUR";
+
+    plugin-onedark = {
+      url = "github:navarasu/onedark.nvim";
+      flake = false;
+    };
     orcaslicer.url = "github:ovlach/nix-orca-slicer";
   };
 

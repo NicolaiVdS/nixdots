@@ -288,6 +288,22 @@
         "type": "github"
       }
     },
+    "plugin-onedark": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1693820109,
+        "narHash": "sha256-QG1bTkfaF4giM017rdqohJRjt5NQKNogpLT4/jojm5U=",
+        "owner": "navarasu",
+        "repo": "onedark.nvim",
+        "rev": "dac8c39812dae025255c9069a260e1f69d967927",
+        "type": "github"
+      },
+      "original": {
+        "owner": "navarasu",
+        "repo": "onedark.nvim",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "alejandra": "alejandra",
@@ -296,7 +312,8 @@
         "hyprland-contrib": "hyprland-contrib",
         "nixpkgs": "nixpkgs_5",
         "nur": "nur",
-        "orcaslicer": "orcaslicer"
+        "orcaslicer": "orcaslicer",
+        "plugin-onedark": "plugin-onedark"
       }
     },
     "rust-analyzer-src": {
