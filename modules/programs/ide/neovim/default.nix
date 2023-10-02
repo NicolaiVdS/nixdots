@@ -5,9 +5,13 @@
 
     viAlias = true;
     vimAlias = true;
-    vimdiffAlias = true;
+    #vimdiffAlias = true;
 
     defaultEditor = true;
+
+    extraLuaConfig = ''
+      ${builtins.readFile ./options.lua}
+    '';
   };
   environment.variables.EDITOR = "nvim";
   home-manager.users.nicolaivds = {
