@@ -10,7 +10,7 @@
     pamixer
     neofetch
     zathura
-    vim
+    #vim
     dunst
     libnotify
     wget
@@ -50,5 +50,11 @@
     bottles
 
     peazip
+    aether
+
+    steamtinkerlaunch
+    xdotool
+    xorg.xprop
+    xorg.xwininfo
   ];
 }
