@@ -4,5 +4,6 @@
     ./discord.nix
     ./mpv.nix
     ./brave.nix
+    ./fonts.nix
   ];
 }

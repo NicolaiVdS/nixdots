@@ -2,6 +2,14 @@
   home-manager.users.nicolaivds = {
     programs.foot = {
       enable = true;
+      settings = {
+        main = {
+          #term = "xterm-256color";
+
+          font = "Fira Code:size=11";
+          dpi-aware = "yes";
+        };
+      };
     };
   };
 }
