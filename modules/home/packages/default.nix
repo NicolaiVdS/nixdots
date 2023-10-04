@@ -35,6 +35,8 @@
     obs-studio-plugins.obs-pipewire-audio-capture
 
     betterbird
+    station
+    ferdium
 
     #inputs.orcaslicer.packages.x86_64-linux
     protontricks

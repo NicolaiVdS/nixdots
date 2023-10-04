@@ -17,6 +17,16 @@
 
       plugins = with pkgs.vimPlugins; [
         {
+          plugin = dashboard-nvim;
+          config = toLua "require(\"dashboard\").setup()";
+        }
+
+        {
+          plugin = nvim-web-devicons;
+          config = toLuaFile ./plugins/nvim-web-devicons.lua;
+        }
+
+        {
           plugin = comment-nvim;
           config = toLua "require(\"Comment\").setup()";
         }
@@ -31,11 +41,14 @@
         ${builtins.readFile ./options.lua}
       '';
 
+      extraPackages = with pkgs; [
+        luajitPackages.lua-lsp
+        rnix-lsp
+      ];
+
       defaultEditor = true;
     };
-    home.packages = with pkgs; [
-      rnix-lsp
-    ];
+    
     home.sessionVariables = {
       EDITOR = "nvim";
     };

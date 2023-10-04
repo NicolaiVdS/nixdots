@@ -8,7 +8,7 @@
 
 in {
   home.packages = with pkgs; [
-    webcord-vencord
+    (webcord-vencord.override { webcord = webcord.override { electron_25 = electron_24;};})
   ];
 
   xdg.configFile = {
