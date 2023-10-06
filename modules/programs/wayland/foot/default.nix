@@ -4,10 +4,14 @@
       enable = true;
       settings = {
         main = {
-          #term = "xterm-256color";
+          term = "xterm-256color";
 
-          font = "Fira Code:size=11";
+          font = "FiraCode Nerd Font:size=9";
           dpi-aware = "yes";
+        };
+
+        mouse = {
+          hide-when-typing = "yes";
         };
       };
     };

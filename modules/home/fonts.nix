@@ -1,8 +1,9 @@
 { pkgs, ... }:
 {
-  fonts.fontconfig.enableProfileFonts = true;
+  fonts.fontconfig.enable = true;
 
-  home.package = with pkgs; [
+  home.packages = with pkgs; [
     fira-code
-  ]
+    nerdfonts
+  ];
 }
