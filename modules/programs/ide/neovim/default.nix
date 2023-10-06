@@ -18,7 +18,7 @@
       plugins = with pkgs.vimPlugins; [
         {
           plugin = dashboard-nvim;
-          config = toLuaFile ./plughins/dashboard.lua;
+          config = toLuaFile ./plugins/dashboard.lua;
         }
 
         {
